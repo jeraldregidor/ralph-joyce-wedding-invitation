@@ -16,7 +16,7 @@ const PrenupVideo = () => {
           <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-lg">
             <iframe
               className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/1jvKxg3ePP0?autoplay=1&mute=1&start=1"
+              src="https://www.youtube.com/embed/GsZInkhCdDE?autoplay=1&mute=1&start=1"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

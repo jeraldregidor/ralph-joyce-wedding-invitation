@@ -6,8 +6,8 @@ import PrenupVideo from '../components/PrenupVideo';
 import Invitation from '../components/Invitation';
 import Gifts from '../components/Gifts';
 
-const bridesName = 'Claud';
-const groomsName = 'Vince';
+const bridesName = 'Joyce';
+const groomsName = 'Eagle';
 
 const container = {
   hidden: { opacity: 0 },
@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <HeroSection bridesName={bridesName} groomsName={groomsName} />
+      <HeroSection bridesName={groomsName} groomsName={bridesName} />
 
       {/* Invitation Details */}
       <section className="flex flex-col items-center justify-center py-16 px-6 text-center border-gray-100 bg-white">
@@ -48,7 +48,7 @@ const Home = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <p className="text-xl sm:text-2xl font-serif text-gray-800 tracking-wider">
-            September 13, 2025
+            July 18, 2026
           </p>
         </motion.div>
 
@@ -58,7 +58,7 @@ const Home = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Together with their families, Claudette and Vince joyfully invite you to join them in celebrating their love and commitment.
+          Together with their families, Ralph and Joyce joyfully invite you to join them in celebrating their love and commitment.
         </motion.p>
 
         <p className="font-serif text-gray-500 text-sm">
@@ -81,11 +81,11 @@ const Home = () => {
             <span className="absolute -left-3 top-1 w-6 h-6 bg-white border-4 border-gray-100 rounded-full"></span>
             <h3 className="font-serif text-lg text-gray-800 mb-2">Ceremony</h3>
             <p className="font-serif text-sm text-gray-600 mb-2">
-              <strong>St. Francis of Assisi Parish</strong><br />
-              9:00 AM
+              <strong>St. Joseph Parish Church</strong><br />
+              Ragan Sur Delfin Albano, Isabela
             </p>
             <a
-              href="https://maps.app.goo.gl/PN4YjZmKPT8EjqVn8"
+              href="https://maps.app.goo.gl/K5Mn8rC8gB1iABqv9"
               target="_blank"
               rel="noopener noreferrer"
               className="font-serif text-sm underline text-gray-500 hover:text-gray-800"
@@ -105,11 +105,11 @@ const Home = () => {
             <span className="absolute -left-3 top-1 w-6 h-6 bg-white border-4 border-gray-100 rounded-full"></span>
             <h3 className="font-serif text-lg text-gray-800 mb-2">Reception</h3>
             <p className="font-serif text-sm text-gray-600 mb-2">
-              <strong>Antel Grand Ballroom</strong><br />
-              General Trias, Cavite — <strong>11:00 AM</strong>
+              <strong>Mario's Hotel & Pavillion</strong><br />
+              Tumauini, Isabela — <strong>11:00 AM</strong>
             </p>
             <a
-              href="https://maps.app.goo.gl/QMaEeDXsvW9Jwtpq5"
+              href="https://maps.app.goo.gl/qYzRsU6WcEgtLurq8"
               target="_blank"
               rel="noopener noreferrer"
               className="font-serif text-sm underline text-gray-500 hover:text-gray-800"
@@ -159,7 +159,7 @@ const Home = () => {
       </section>
 
       <Gifts />
-            
+
       <WeddingGallery />
 
       <PrenupVideo />
