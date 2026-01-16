@@ -194,7 +194,7 @@ const Home = () => {
             Please confirm your attendance by filling out the RSVP form.
           </p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSf9hfXSt-Liafd88jPKWGt0GE6NlNQi20Bi3M8Tq1jRMw9qTw/viewform?usp=dialog"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe0I870nKnUDQqMRHJCNKod1Vjnzqx6wq3jfSU-dX5p-Nre0g/viewform?usp=publish-editor"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-[#5D4633] hover:bg-white hover:text-black text-white font-serif text-sm py-3 px-6 rounded-full transition duration-300 shadow-md"
