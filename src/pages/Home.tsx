@@ -7,7 +7,7 @@ import Invitation from '../components/Invitation';
 import Gifts from '../components/Gifts';
 
 const bridesName = 'Joyce';
-const groomsName = 'Eagle';
+const groomsName = 'Ralph';
 
 const container = {
   hidden: { opacity: 0 },
