@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection';
 import PrenupVideo from '../components/PrenupVideo';
 import Invitation from '../components/Invitation';
 import Gifts from '../components/Gifts';
+import OurLoveStory from '../components/OurLoveStory';
 
 const bridesName = 'Joyce';
 const groomsName = 'Ralph';
@@ -30,41 +31,10 @@ const Home = () => {
       {/* Hero Section */}
       <HeroSection bridesName={groomsName} groomsName={bridesName} />
 
-      {/* Invitation Details */}
-      <section className="flex flex-col items-center justify-center py-16 px-6 text-center border-gray-100 bg-white">
-        <motion.h2
-          className="text-2xl sm:text-3xl font-serif text-gray-900 mb-2"
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          Save the Date
-        </motion.h2>
+      <PrenupVideo />
 
-        <motion.div
-          className="bg-gray-100 rounded-full px-6 py-2 mb-6 shadow-sm"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-        >
-          <p className="text-xl sm:text-2xl font-serif text-gray-800 tracking-wider">
-            July 18, 2026
-          </p>
-        </motion.div>
-
-        <motion.p
-          className="max-w-xl font-serif text-lg text-gray-700 mb-6 tracking-wide"
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          Together with their families, Ralph and Joyce joyfully invite you to join them in celebrating their love and commitment.
-        </motion.p>
-
-        <p className="font-serif text-gray-500 text-sm">
-          We can’t wait to share this special day with you!
-        </p>
-      </section>
+      {/* Our Love Story */}
+      <OurLoveStory/>
 
       {/* Roadmap: Ceremony & Reception */}
       <section className="flex flex-col items-center justify-center py-16 px-6 bg-gray-50 text-center border-y border-gray-200">
@@ -124,7 +94,7 @@ const Home = () => {
       <Invitation />
 
       {/* Wedding Theme & Attire */}
-      <section className="flex flex-col items-center justify-center py-16 px-6 bg-white text-center border-b border-gray-100">
+      <section className="flex flex-col items-center justify-center py-16 px-6 bg-red-100 text-center border-b border-gray-100">
         <motion.div
           className="max-w-xl"
           initial={{ opacity: 0, y: 20 }}
@@ -161,8 +131,6 @@ const Home = () => {
       <Gifts />
 
       <WeddingGallery />
-
-      <PrenupVideo />
 
       {/* Guest Notice */}
       <section className="flex flex-col items-center justify-center py-10 px-6 bg-white text-center border-gray-100">

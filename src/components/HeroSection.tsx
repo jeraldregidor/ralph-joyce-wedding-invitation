@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import SaveTheDateCounter from './SaveTheDateCounter';
 
 interface HeroSectionProps {
   bridesName: string;
@@ -24,7 +23,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ bridesName, groomsName }) => 
   return (
     <section
       className="relative flex flex-col items-center justify-center min-h-screen px-6 text-center bg-cover bg-center border-b border-gray-200"
-      style={{ backgroundImage: "url('./images/wedding-bg.jpg')" }}
+      style={{ backgroundImage: "url('./images/wedding-bg.jpeg')" }}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
@@ -60,8 +59,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({ bridesName, groomsName }) => 
             </motion.span>
           ))}
         </motion.h1>
-
-        {/* <SaveTheDateCounter targetDate="2025-09-13T00:00:00" /> */}
       </div>
     </section>
   );
