@@ -4,7 +4,7 @@ const TheEntourage = () => {
   return (
     <>
       {/* The Entourage Section */}
-      <section className="flex flex-col items-center justify-center py-2 px-6 bg-white text-center border-b border-gray-100">
+      <section className="flex flex-col items-center justify-center py-6 px-6 bg-white text-center">
         <motion.div
           className="max-w-2xl text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -15,7 +15,7 @@ const TheEntourage = () => {
           <img
             src="./images/TheEntourage.png"
             alt="Invitation"
-            className="rounded-xl shadow-lg w-full max-w-2xl"
+            className="rounded-xl w-full max-w-2xl"
           />
         </motion.div>
       </section>

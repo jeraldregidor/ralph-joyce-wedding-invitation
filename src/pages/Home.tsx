@@ -3,11 +3,12 @@ import Footer from '../components/Footer';
 import WeddingGallery from '../components/WeddingGallery';
 import HeroSection from '../components/HeroSection';
 import PrenupVideo from '../components/PrenupVideo';
-import Invitation from '../components/Invitation';
-import Gifts from '../components/Gifts';
 import OurLoveStory from '../components/OurLoveStory';
 import TheEntourage from '../components/TheEntourage';
 import SecondarySponsor from '../components/SecondarySponsor';
+import DressCode from '../components/DressCode';
+import GiftGuides from '../components/GiftGuides';
+import Reminders from '../components/Reminders';
 
 const bridesName = 'Joyce';
 const groomsName = 'Ralph';
@@ -80,15 +81,29 @@ const Home = () => {
 
       <TheEntourage />
 
-      <img
+      <motion.div
+          className="w-full flex justify-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+        >
+          <img
             src="./images/EntourSecondDiv.jpg"
             alt="Invitation"
-            className="shadow-lg w-full"
+            className="shadow-lg w-full max-w-4xl"
           />
+        </motion.div>
 
       <SecondarySponsor />
 
-      {/* Wedding Theme & Attire */}
+      <DressCode/>
+
+      <GiftGuides/>
+
+      <Reminders/>
+
+      {/* FAQ Section */}
       <section className="flex flex-col items-center justify-center py-16 px-6 bg-red-100 text-center border-b border-gray-100">
         <motion.div
           className="max-w-xl"
@@ -108,22 +123,13 @@ const Home = () => {
             Guests are encouraged to wear tones that harmonize with the "Family of Brown" palette.
           </p>
 
-          {/* Color Circles */}
-          <div className="flex justify-center gap-3 mb-6">
-            <span className="w-10 h-10 rounded-full bg-[#A9746E]" title="Rosewood"></span>
-            <span className="w-10 h-10 rounded-full bg-[#C3A38A]" title="Desert Sand"></span>
-            <span className="w-10 h-10 rounded-full bg-[#E6D3B3]" title="Ivory Beige"></span>
-            <span className="w-10 h-10 rounded-full bg-[#8B5E3C]" title="Chestnut Brown"></span>
-            <span className="w-10 h-10 rounded-full bg-[#5D4633]" title="Mocha"></span>
-          </div>
+
 
           <p className="font-serif text-sm text-gray-500 italic">
             Let your elegance shine. Thank you for helping us bring our theme to life.
           </p>
         </motion.div>
       </section>
-
-      <Gifts />
 
       <WeddingGallery />
 
