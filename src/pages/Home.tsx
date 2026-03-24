@@ -6,24 +6,11 @@ import PrenupVideo from '../components/PrenupVideo';
 import Invitation from '../components/Invitation';
 import Gifts from '../components/Gifts';
 import OurLoveStory from '../components/OurLoveStory';
+import TheEntourage from '../components/TheEntourage';
+import SecondarySponsor from '../components/SecondarySponsor';
 
 const bridesName = 'Joyce';
 const groomsName = 'Ralph';
-
-const container = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.05,
-    },
-  },
-};
-
-const child = {
-  hidden: { opacity: 0, y: 10 },
-  visible: { opacity: 1, y: 0 },
-};
 
 const Home = () => {
   return (
@@ -91,7 +78,15 @@ const Home = () => {
         </div>
       </section>
 
-      <Invitation />
+      <TheEntourage />
+
+      <img
+            src="./images/EntourSecondDiv.jpg"
+            alt="Invitation"
+            className="shadow-lg w-full"
+          />
+
+      <SecondarySponsor />
 
       {/* Wedding Theme & Attire */}
       <section className="flex flex-col items-center justify-center py-16 px-6 bg-red-100 text-center border-b border-gray-100">
