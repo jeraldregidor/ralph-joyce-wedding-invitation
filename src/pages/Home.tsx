@@ -9,6 +9,7 @@ import SecondarySponsor from '../components/SecondarySponsor';
 import DressCode from '../components/DressCode';
 import GiftGuides from '../components/GiftGuides';
 import Reminders from '../components/Reminders';
+import Faq from '../components/Faq';
 
 const bridesName = 'Joyce';
 const groomsName = 'Ralph';
@@ -104,53 +105,10 @@ const Home = () => {
       <Reminders/>
 
       {/* FAQ Section */}
-      <section className="flex flex-col items-center justify-center py-16 px-6 bg-red-100 text-center border-b border-gray-100">
-        <motion.div
-          className="max-w-xl"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h2 className="font-serif text-2xl text-gray-900 mb-4">Wedding Theme & Attire</h2>
-          <p className="font-serif text-sm text-gray-700 mb-6 leading-relaxed">
-            Our wedding will be styled in a soft, timeless, and elegant aesthetic — a blend of whites, neutrals, and gentle gold accents.
-            We kindly ask our beloved guests to dress in formal or semi-formal attire.
-          </p>
-
-          <p className="font-serif text-sm text-gray-700 mb-4 leading-relaxed">
-            <span className="font-semibold">Color Motif:</span> Shades of Brown and Earth Tones.
-            Guests are encouraged to wear tones that harmonize with the "Family of Brown" palette.
-          </p>
-
-
-
-          <p className="font-serif text-sm text-gray-500 italic">
-            Let your elegance shine. Thank you for helping us bring our theme to life.
-          </p>
-        </motion.div>
-      </section>
-
-      <WeddingGallery />
-
-      {/* Guest Notice */}
-      <section className="flex flex-col items-center justify-center py-10 px-6 bg-white text-center border-gray-100">
-        <motion.div
-          className="border border-gray-200 rounded-xl px-6 py-5 shadow-sm max-w-xl bg-gray-50"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6 }}
-        >
-          <p className="font-serif text-gray-700 text-sm leading-relaxed">
-            Kindly note that due to limited capacity, we can only accommodate guests who have confirmed their attendance through this website.
-            We appreciate your understanding and look forward to celebrating with you!
-          </p>
-        </motion.div>
-      </section>
+      <Faq />
 
       {/* RSVP Section */}
-      <section className="flex flex-col items-center justify-center py-10 px-6 bg-white text-center border-b border-gray-100">
+      <section className="flex flex-col items-center justify-center py-10 px-6 bg-white text-center border-b border-gray-100 m-20">
         <motion.div
           className="max-w-xl text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -158,20 +116,22 @@ const Home = () => {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-serif text-2xl text-gray-900 mb-4">Kindly RSVP</h2>
+          <h2 className="font-serif text-4xl text-gray-900 mb-4">Kindly RSVP</h2>
           <p className="font-serif text-sm text-gray-700 mb-6">
-            Please confirm your attendance by filling out the RSVP form.
+            Please confirm your attendance by filling out the RSVP form on or before May 25, 2026.
           </p>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSe0I870nKnUDQqMRHJCNKod1Vjnzqx6wq3jfSU-dX5p-Nre0g/viewform?usp=publish-editor"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-[#5D4633] hover:bg-white hover:text-black text-white font-serif text-sm py-3 px-6 rounded-full transition duration-300 shadow-md"
+            className="inline-block bg-[#8B74B6] hover:bg-[#5D458B] hover:text-white text-black font-serif text-sm py-5 px-8 rounded-full transition duration-300 shadow-md"
           >
             Fill Out RSVP Form
           </a>
         </motion.div>
       </section>
+
+      <WeddingGallery />
 
 
       <Footer />
