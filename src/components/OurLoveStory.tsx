@@ -35,7 +35,7 @@ const OurLoveStory = () => {
 
             {/* Story Text */}
             <div className="w-2/3 font-serif text-gray-800 leading-relaxed h-full text-sm md:text-2xl lg:text-3xl overflow-scroll">
-              <h2 className="font-serif text-2xl md:text-4xl lg:text-6xl text-gray-900 mb-4 lg:mb-20">
+              <h2 className="font-serif text-2xl md:text-4xl text-gray-900 mb-4 lg:mb-20">
                 Our Love Story
               </h2>
 

@@ -10,6 +10,7 @@ import DressCode from '../components/DressCode';
 import GiftGuides from '../components/GiftGuides';
 import Reminders from '../components/Reminders';
 import Faq from '../components/Faq';
+import CeremonyReception from '../components/CeremonyReception';
 
 const bridesName = 'Joyce';
 const groomsName = 'Ralph';
@@ -25,60 +26,7 @@ const Home = () => {
       {/* Our Love Story */}
       <OurLoveStory/>
 
-      {/* Roadmap: Ceremony & Reception */}
-      <section className="flex flex-col items-center justify-center py-16 px-6 bg-gray-50 text-center border-y border-gray-200">
-        <div className="relative border-l border-gray-300 max-w-xl mx-auto">
-
-          {/* Ceremony */}
-          <motion.div
-            className="mb-10 ml-6 relative"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }} // Trigger when 30% visible
-            transition={{ duration: 0.6, delay: 0 }}
-          >
-            <span className="absolute -left-3 top-1 w-6 h-6 bg-white border-4 border-gray-100 rounded-full"></span>
-            <h3 className="font-serif text-lg text-gray-800 mb-2">Ceremony</h3>
-            <p className="font-serif text-sm text-gray-600 mb-2">
-              <strong>St. Joseph Parish Church</strong><br />
-              Ragan Sur Delfin Albano, Isabela
-            </p>
-            <a
-              href="https://maps.app.goo.gl/K5Mn8rC8gB1iABqv9"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-serif text-sm underline text-gray-500 hover:text-gray-800"
-            >
-              View on Google Maps
-            </a>
-          </motion.div>
-
-          {/* Reception */}
-          <motion.div
-            className="ml-6 relative"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, delay: 0.15 }}
-          >
-            <span className="absolute -left-3 top-1 w-6 h-6 bg-white border-4 border-gray-100 rounded-full"></span>
-            <h3 className="font-serif text-lg text-gray-800 mb-2">Reception</h3>
-            <p className="font-serif text-sm text-gray-600 mb-2">
-              <strong>Mario's Hotel & Pavillion</strong><br />
-              Tumauini, Isabela — <strong>11:00 AM</strong>
-            </p>
-            <a
-              href="https://maps.app.goo.gl/qYzRsU6WcEgtLurq8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-serif text-sm underline text-gray-500 hover:text-gray-800"
-            >
-              View on Google Maps
-            </a>
-          </motion.div>
-
-        </div>
-      </section>
+      <CeremonyReception/>
 
       <TheEntourage />
 
