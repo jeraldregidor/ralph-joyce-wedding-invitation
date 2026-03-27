@@ -5,12 +5,12 @@ const CeremonyReception = () => {
   return (
     <>
       {/* Roadmap: Ceremony & Reception */}
-      <section className="flex items-center justify-center py-16 px-6 bg-gray-50 text-center border-y border-gray-200">
-        <div className="border-gray-300 w-full max-w-4xl ">
+      <section className="flex items-center justify-center bg-gray-50 text-center border-y border-gray-200 ">
+        <div className="border-gray-300 w-full max-w-5xl flex flex-wrap items-center justify-center p-2 mt-20">
 
           {/* Ceremony */}
           <motion.div
-            className="mb-10  flex flex-col items-center justify-center"
+            className="flex flex-col items-center justify-center mb-10"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }} // Trigger when 30% visible
@@ -38,7 +38,7 @@ const CeremonyReception = () => {
 
           {/* Reception */}
           <motion.div
-            className="mb-10  flex flex-col items-center justify-center"
+            className="flex flex-col items-center justify-center mb-10"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
