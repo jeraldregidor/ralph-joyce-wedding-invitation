@@ -27,12 +27,12 @@ const Faq = () => {
             </div>
 
             {/* Questions */}
-            <div className="pl-3 font-serif text-gray-800 leading-relaxed h-full text-sm md:text-2xl lg:text-3xl  w-full max-w-4xle:\Downloads\Edited Pren up photos-20260324T140717Z-3-001\Edited Pren up photos\PhotoLibrary.jpg md:w-2/3 text-left flex flex-col">
+            <div className="pl-3 font-serif text-gray-800 leading-relaxed h-full text-sm md:text-2xl lg:text-3xl  w-full max-w-4xl md:w-2/3 text-left flex flex-col">
               
               {/* Q1 */}
-              <div className=' flex'>
-                <div className=' w-1/12 text-2xl'>01</div>
-                <div className='w-11/12'>
+              <div className='flex'>
+                <div className=' w-2/12 text-2xl'>01</div>
+                <div className='w-10/12'>
                   <h2 className=' mb-2 text-2xl'>What time should I arrive?</h2>
                   <p className=' text-sm mb-8'>
                     We recommend coming by 12:00  Noon so you have time to settle in before the ceremony starts. 
@@ -42,8 +42,8 @@ const Faq = () => {
 
               {/* Q2 */}
               <div className=' flex'>
-                <div className=' w-1/12 text-2xl'>02</div>
-                <div className='w-11/12'>
+                <div className=' w-2/12 text-2xl'>02</div>
+                <div className='w-10/12'>
                   <h2 className='mb-2 text-2xl'>Can I bring my kids or a +1?</h2>
                   <p className='text-sm mb-8'>
                     Unfortunately, due to space and seating constraints, we kindly ask that only those
@@ -56,8 +56,8 @@ const Faq = () => {
 
               {/* Q3 */}
               <div className=' flex'>
-                <div className=' w-1/12 text-2xl'>03</div>
-                <div className='w-11/12'>
+                <div className=' w-2/12 text-2xl'>03</div>
+                <div className='w-10/12'>
                   <h2 className='mb-2 text-2xl'>Can we wear color white or other color?</h2>
                   <p className='text-sm'>
                     We would highly appreciate it if you could follow our dress code and avoid wearing white as a sign of respect for the couple.

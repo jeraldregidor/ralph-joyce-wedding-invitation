@@ -56,9 +56,9 @@ const Home = () => {
       <Faq />
 
       {/* RSVP Section */}
-      <section className="flex flex-col items-center justify-center py-10 px-6 bg-white text-center border-b border-gray-100 m-20">
+      <section className="flex flex-col items-center justify-center py-10 px-6 bg-white text-center border-b border-gray-100 m-3">
         <motion.div
-          className="max-w-xl text-center"
+          className="w-full max-w-5xl text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
