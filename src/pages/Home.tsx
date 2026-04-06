@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import Footer from '../components/Footer';
 import WeddingGallery from '../components/WeddingGallery';
 import HeroSection from '../components/HeroSection';
 import PrenupVideo from '../components/PrenupVideo';
@@ -10,26 +9,20 @@ import DressCode from '../components/DressCode';
 import GiftGuides from '../components/GiftGuides';
 import Reminders from '../components/Reminders';
 import Faq from '../components/Faq';
-import CeremonyReception from '../components/CeremonyReception';
-
-const bridesName = 'Joyce';
-const groomsName = 'Ralph';
+import TheVenue from '../components/TheVenue';
+import WeddingTimeline from '../components/WeddingTimeline';
+import SnapShare from '../components/SnapShare';
 
 const Home = () => {
   return (
     <>
-      {/* Hero Section */}
-      <HeroSection bridesName={groomsName} groomsName={bridesName} />
+      <HeroSection />
 
       <PrenupVideo />
 
-      {/* Our Love Story */}
       <OurLoveStory/>
 
-      <CeremonyReception/>
-
-      <TheEntourage />
-
+      {/* Divider Image 1*/}
       <motion.div
           className="w-full flex justify-center"
           initial={{ opacity: 0, y: 20 }}
@@ -38,13 +31,64 @@ const Home = () => {
           transition={{ duration: 0.6 }}
         >
           <img
-            src="./images/EntourSecondDiv.jpg"
+            src="./images/ImageDivider1.png"
             alt="Invitation"
-            className="shadow-lg w-full max-w-4xl"
+            className="shadow-lg w-full max-w-6xl"
           />
-        </motion.div>
+      </motion.div>
+
+      <TheVenue/>
+
+      <WeddingTimeline/>
+
+      {/* Divider Image 2*/}
+      <motion.div
+          className="w-full flex justify-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+        >
+          <img
+            src="./images/ImageDivider2.png"
+            alt="Invitation"
+            className="shadow-lg w-full max-w-6xl"
+          />
+      </motion.div>
+
+      <TheEntourage />
+
+      {/* Divider Image 3*/}
+      <motion.div
+          className="w-full flex justify-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+        >
+          <img
+            src="./images/ImageDivider3.png"
+            alt="Invitation"
+            className="w-full max-w-6xl"
+          />
+      </motion.div>
 
       <SecondarySponsor />
+
+      {/* Divider Image 4*/}
+      <motion.div
+          className="w-full flex justify-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+        >
+          <img
+            src="./images/ImageDivider4.jpg"
+            alt="Invitation"
+            className="shadow-lg w-full max-w-6xl"
+          />
+      </motion.div>
 
       <DressCode/>
 
@@ -52,7 +96,6 @@ const Home = () => {
 
       <Reminders/>
 
-      {/* FAQ Section */}
       <Faq />
 
       {/* RSVP Section */}
@@ -79,10 +122,25 @@ const Home = () => {
         </motion.div>
       </section>
 
+      <SnapShare/>
+
       <WeddingGallery />
 
+      {/* Footer */}
+      <motion.div
+          className="w-full flex justify-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+        >
+          <img
+            src="./images/Footer.png"
+            alt="Invitation"
+            className="shadow-lg w-full max-w-6xl"
+          />
+      </motion.div>
 
-      <Footer />
     </>
   );
 };

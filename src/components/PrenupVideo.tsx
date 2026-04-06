@@ -7,7 +7,7 @@ const PrenupVideo = () => {
       {/* RSVP Section */}
       <section className="flex flex-col items-center justify-center py-10 px-6 bg-white text-center border-b border-gray-100">
         <motion.div
-          className="w-full max-w-7xl text-center"
+          className="w-full max-w-6xl text-center p-5"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}

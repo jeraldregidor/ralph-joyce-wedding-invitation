@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
-const TheEntourage = () => {
+const SnapShare = () => {
   return (
     <>
-      {/* The Entourage Section */}
-      <section className="flex flex-col items-center justify-center bg-white text-center">
+      {/* The SnapShare Section */}
+      <section className="flex flex-col items-center justify-center py-6 px-6 bg-white text-center">
         <motion.div
           className="max-w-6xl text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -13,7 +13,7 @@ const TheEntourage = () => {
           transition={{ duration: 0.6 }}
         >
           <img
-            src="./images/TheEntourage.png"
+            src="./images/SnapShare.png"
             alt="Invitation"
             className="w-full"
           />
@@ -23,4 +23,4 @@ const TheEntourage = () => {
   );
 };
 
-export default TheEntourage;
+export default SnapShare;
