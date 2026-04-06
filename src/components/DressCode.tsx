@@ -4,7 +4,7 @@ const DressCode = () => {
   return (
     <>
       {/* The DressCode Section */}
-      <section className="flex flex-col items-center justify-center px-6 bg-white text-center">
+      <section className="flex flex-col items-center justify-center bg-white text-center">
         <motion.div
           className="max-w-6xl text-center"
           initial={{ opacity: 0, y: 20 }}

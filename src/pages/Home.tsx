@@ -12,6 +12,7 @@ import Faq from '../components/Faq';
 import TheVenue from '../components/TheVenue';
 import WeddingTimeline from '../components/WeddingTimeline';
 import SnapShare from '../components/SnapShare';
+import Rsvp from '../components/Rsvp';
 
 const Home = () => {
   return (
@@ -98,30 +99,8 @@ const Home = () => {
 
       <Faq />
 
-      {/* RSVP Section */}
-      <section className="flex flex-col items-center justify-center py-10 px-6 bg-white text-center border-b border-gray-100 m-3">
-        <motion.div
-          className="w-full max-w-5xl text-center"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h2 className="font-serif text-4xl text-gray-900 mb-4">Kindly RSVP</h2>
-          <p className="font-serif text-sm text-gray-700 mb-6">
-            Please confirm your attendance by filling out the RSVP form on or before May 25, 2026.
-          </p>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSe0I870nKnUDQqMRHJCNKod1Vjnzqx6wq3jfSU-dX5p-Nre0g/viewform?usp=publish-editor"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-[#8B74B6] hover:bg-[#5D458B] hover:text-white text-black font-serif text-sm py-5 px-8 rounded-full transition duration-300 shadow-md"
-          >
-            Fill Out RSVP Form
-          </a>
-        </motion.div>
-      </section>
-
+      <Rsvp/>
+      
       <SnapShare/>
 
       <WeddingGallery />
