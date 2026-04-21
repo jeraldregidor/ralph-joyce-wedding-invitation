@@ -20,7 +20,7 @@ const Rsvp = () => {
             Please confirm by clicking this
           </p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSe0I870nKnUDQqMRHJCNKod1Vjnzqx6wq3jfSU-dX5p-Nre0g/viewform?usp=publish-editor"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdt_KcL-7W8s6B96_mnBXJcps3tUziKs3MoQnlmMLcSIi-TnQ/viewform"
             target="_blank"
             rel="noopener noreferrer"
             className="underline inline-block bg-[#B4A1CB] hover:bg-[#8B74B6] hover:text-white font-serif text-xl hover:text-2xl py-5 px-8 rounded-xl transition duration-300 shadow-md border hover:border-2"
