@@ -12,9 +12,9 @@ const Rsvp = () => {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-serif text-5xl mb-4 [text-shadow:_1px_1px_0_gray,_-1px_-1px_0_gray,_1px_-1px_0_gray,_-1px_1px_0_gray]">Rsvp</h2>
+          <h2 className="font-serif text-5xl mb-4 [text-shadow:_1px_1px_0_gray,_-1px_-1px_0_gray,_1px_-1px_0_gray,_-1px_1px_0_gray]">RSVP</h2>
           <p className="font-serif text-xl text-white mb-3">
-            We have reserved a ____ seat/s for you,
+            We have reserved a seat for you,
           </p>
           <p className="font-serif text-xl text-white mb-6">
             Please confirm by clicking this
@@ -23,7 +23,7 @@ const Rsvp = () => {
             href="https://docs.google.com/forms/d/e/1FAIpQLSdt_KcL-7W8s6B96_mnBXJcps3tUziKs3MoQnlmMLcSIi-TnQ/viewform"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline inline-block bg-[#B4A1CB] hover:bg-[#8B74B6] hover:text-white font-serif text-xl hover:text-2xl py-5 px-8 rounded-xl transition duration-300 shadow-md border hover:border-2"
+            className="underline inline-block bg-white text-black font-serif text-xl hover:text-2xl py-5 px-8 rounded-full transition duration-300 shadow-md border hover:border-2"
           >
             RSVP HERE
           </a>
